@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+
+form {
+  border: none;
+  font-family: Arial;
+}
+
+.container {
+  padding: 5px;
+  background-color: none;
+}
+
+input[type=text], input[type=submit] {
+  width: 30%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid gold;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: ;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.button {
+    border-radius:30px 30px 30px 30px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+p {
+  text-align: center;
+  font-family: harrington;
+  font-size: 70px;
+  margin-top: 0px;
+  color:black;
+}
+h1{ text-align:center;
+    font-family:"Castellar";
+    font-style:oblique;
+color:white;}
+    
+#myVideo{
+position:fixed;
+right:0;
+bottom:0;
+z-index: -1;
+min-width:100%;
+min-height:100%;
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
+    h2{text-align: center;
+       font-family: sans-serif;
+       font-style: italic;
+       font-size: 15px;
+        color:white;}
+    
+    h3{ text-align:center;
+    font-family:"calbri", garamond,"Comics Sans MS";
+    font-style:oblique;
+    color:whitesmoke;}
+ body{cursor: pointer;}
+ h6{
+text-align: center;
+
+ } 
+ 
+
+</style>
+</head>
+<body>
+  <h6> <img src="./themes.png" width="20%" height="auto"> </h6>
+   <video autoplay muted loop id="myVideo">
+ <source src="D:\class\sky 2.mp4"type="video/mp4">
+ Your browser does not support HTML5 video.
+</video>
+
+    <h2 id="text" class="title">Perfect and awesome template to present your future product service.<br> Hooking audience attention in the opener.<h2>
+<p id="demo"></p>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 30, 2020 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "REFRESH";
+  }
+}, 1000);
+</script>
+
+
+<button class="button button1">More Information</button>
+<button class="button button2">Get Notified</button>
+
+
+<form action="/action_page.php">
+  <div class="container">
+      <h3>Subscribe to our Newsletter</h3>
+    
+  </div>
+
+  <div class="container" style="text-align: center;">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    </div>
+    <div style="text-align: center;">
+      <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+ 
+    
+  <div style="text-align: center;" class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+<footer>
+  <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+<a href="#" class="fa fa-rss"></a>
+
+    <h2>© 2020 Henrytheme — All Rights Reserved.</h2>
+        </footer>  
+</body>
+</html>
